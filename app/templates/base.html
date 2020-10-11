@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="layout__row layout__row--header">
+            <div class="layout__cell">
+                <div class="header">
+                    <div class="header__logo">
+                        <div class="main-logo">
+                            <p class="main-logo__text">
+                                Bruhhhh
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="header__category">
+                        <ul class="main-category">
+                            <a class="main-category__link"><li class="main-category__item">Все потоки</li></a>
+                            <a class="main-category__link"><li class="main-category__item">Разработка</li></a>
+                            <a class="main-category__link"><li class="main-category__item">Администрирование</li></a>
+                            <a class="main-category__link"><li class="main-category__item">Дизайн</li></a>
+                            <a class="main-category__link"><li class="main-category__item">Менеджмент</li></a>
+                            <a class="main-category__link"><li class="main-category__item">Маркетинг</li></a>
+                        </ul>
+                    </div>
+                    <div class="header__auth">
+                        <div class="main-auth">
+                            <div class="logged-in">
+                                <div class="logged-in__current-user-avatar"></div>
+                            </div>
+
+                            <div class="not-loged-in">
+                                <div class="not-loged-in__sign-up">Регистрация</div>
+                                <div class="not-loged-in__sign-in">Войти</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout__row layout__row--body">
+            <div class="layout__cell layout__cell--body">
+                <div class="body">
+                    <div class="body__content">
+                    {% block body_content %}
+                    {% endblock %}
+                    </div>
+
+                    <div class="body__sidebar">
+                    {% block body_sidebar %}
+                    {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout__row layout__row--footer">
+            <div class="layout__cell">
+                <div class="footer">
+                    <div class="footer__about">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
