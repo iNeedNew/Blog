@@ -5,7 +5,3 @@ from app.error import error
 def page_not_found():
     return '404'
 
-
-@error.errorhandler(200)
-def page_not_found():
-    return '404'
